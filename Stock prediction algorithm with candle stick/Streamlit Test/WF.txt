@@ -1,0 +1,4 @@
+App requirements
+
+- Live chart with prediction
+- Basic application that will show visualization on Streamlit that has to be deployed
