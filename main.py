@@ -1,5 +1,6 @@
 import numpy as np
-# st.write(np.__version__)
+
 import streamlit as st
 
 st.write(f'Streamlit version {st.__version__}')
+st.write(f'Numpy version {np.__version__}_')
