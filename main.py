@@ -24,5 +24,10 @@ def add_bg_from_url():
      )
 
 add_bg_from_url() 
+def header(url):
+     st.markdown(f'<p style="background-color:#f2f3f4;color:#4b5320;font-size:24px;border-radius:2%;text-align:center">{url}</p>', unsafe_allow_html=True)
+header("Forecasting")
 
-st.title("Forecasting")
+def header(url):
+     st.write(f'<p style="color:#4b5320;font-size:24px;text-align:center">{url}</p>', unsafe_allow_html=True)
+header('Navigate to relevant Page')
