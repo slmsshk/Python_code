@@ -31,3 +31,9 @@ header("Forecasting")
 def header(url):
      st.write(f'<p style="color:#4b5320;font-size:24px;text-align:center">{url}</p>', unsafe_allow_html=True)
 header('Navigate to relevant Page')
+
+
+# name=st.text_input("tell Me your name")
+# age=st.number_input("give me your age")
+# dob=st.date_input('Enter date')
+
