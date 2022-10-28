@@ -18,7 +18,7 @@ st.markdown(f"<p style='background-color:darkgreen;padding:5px;color:#f2f3f4;'>F
 
 st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters to fetch Data</p> <p style='font-size:10px;'><em>enter interval and period to get rid of the error<em></p>",unsafe_allow_html=True)
 interval=st.sidebar.selectbox(label='Select Interval',options=('1m', '2m', '5m', '15m', '30m', '60m', '1d', '5d', '1wk', '1mo', '3mo'))
-period='1m'
+period='1d'
 # # 1m,
 if interval =="1m":
     periods=st.sidebar.selectbox(label='Enter Period',options=['1d','5d','1wk'])
@@ -64,7 +64,7 @@ st.write(f"<p style='font-size:15px;'>Preparing Data</p>",unsafe_allow_html=True
 
 st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters for model training</p>",unsafe_allow_html=True)
 
-end=st.sidebar.number_input("Enter how many lags you want to use",value=1,min_value=1,max_value=10,step=1,value=1)
+end=st.sidebar.number_input("Enter how many lags you want to use",value=1,min_value=1,max_value=10,step=1)
 sp=end
 future=st.sidebar.number_input("Enter how many steps you want to predict in future",value=1,min_value=1,max_value=3,step=1)
 
