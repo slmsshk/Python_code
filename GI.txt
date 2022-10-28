@@ -1,0 +1,700 @@
+<div>
+<div>
+<span>Partner Center</span>
+<span class="subtitle">Find a Broker</span>
+</div>
+</div>
+<p>What is forex trading?</p>
+<p>Forex trading is the <em>simultaneous</em> buying of one currency and selling of another.</p>
+<p>Currencies are traded through a “<a href="https://www.babypips.com/learn/forex/how-to-choose-forex-broker" target="_blank" rel="noopener noopener">forex broker</a>” or “CFD provider” and are <strong>traded in pairs</strong>.&nbsp;Currencies are quoted in relation to <em>another</em> currency.</p>
+<p>For example, the euro and the U.S. dollar (<strong>EUR/USD</strong>) or the British pound and the Japanese yen (<strong>GBP/JPY</strong>).</p>
+<p><strong></strong></p><strong>When you trade in the forex market, you buy or sell in currency pairs.</strong>
+<p><img loading="lazy" class="aligncenter lazyload" title="Buying and Selling in Currency Pairs" src="https://bpcdn.co/images/2016/05/pre-school-tug-of-war.png" alt="Buying and Selling in Currency Pairs" width="490" height="166" border="0"></p>
+<p>Imagine each <a href="https://www.babypips.com/forexpedia/currency-pair" target="_blank" rel="noopener noopener">currency pair</a> constantly in a “tug of war” with each currency on its own side of the rope.</p>
+<p>An exchange rate is the relative price of two currencies from two different countries.</p>
+<p>Exchange rates fluctuate based on <a href="https://marketmilk.babypips.com/currency-strength" target="_blank" rel="noopener noopener">which currency is stronger</a> at the moment.</p>
+<p>There are three categories of currency pairs:</p>
+<ol>
+<li>The “<strong>majors</strong>“</li>
+<li>The “<strong>crosses</strong>“</li>
+<li>The “<strong>exotics</strong>“</li>
+</ol>
+<p>The major currency pairs <em>always</em> include the U.S. dollar.</p>
+<p>Cross-currency pairs do NOT include the U.S. dollar. Crosses that involve any of the major currencies are also known as ” minors”.</p>
+<p>Exotic currency pairs consist of one major currency and one currency from an emerging market (EM).</p>
+<h2>Major Currency Pairs</h2>
+<p><img loading="lazy" class="size-full wp-image-106947 aligncenter lazyload" src="https://bpcdn.co/images/2011/04/eur-usd.png" alt="EUR/USD Currency Pair" width="582" height="401" sizes="(max-width: 582px) 100vw, 582px" srcset="https://bpcdn.co/images/2011/04/eur-usd.png 582w, https://bpcdn.co/images/2011/04/eur-usd-360x248.png 360w"></p>
+<p>The currency pairs listed below are considered the “<strong>majors.</strong>”</p>
+<p>These pairs all contain the U.S. dollar (<strong>USD</strong>) on one side and are the most frequently traded.</p>
+<p>While there are EIGHT major <em>currencies</em>, there are only SEVEN major <em>currency pairs</em>.</p>
+<p>Compared to the crosses and exotics, the price moves more frequently with the majors, which provides more trading opportunities.</p>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th>Currency Pair</th>
+<th>Countries</th>
+<th>FX Geek Speak</th>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURUSD/overview" target="_blank" rel="noopener noopener">EUR/USD</a></td>
+<td align="center">Eurozone / United States</td>
+<td align="center">“euro dollar”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDJPY/overview" target="_blank" rel="noopener noopener">USD/JPY</a></td>
+<td align="center">United States / Japan</td>
+<td align="center">“dollar yen”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/GBPUSD/overview" target="_blank" rel="noopener noopener">GBP/USD</a></td>
+<td align="center">United Kingdom / United States</td>
+<td align="center">“pound dollar”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDCHF/overview" target="_blank" rel="noopener noopener">USD/CHF</a></td>
+<td align="center">United States/ Switzerland</td>
+<td align="center">“dollar swissy”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDCAD/overview" target="_blank" rel="noopener noopener">USD/CAD</a></td>
+<td align="center">United States / Canada</td>
+<td align="center">“dollar loonie”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/AUDUSD/overview" target="_blank" rel="noopener noopener">AUD/USD</a></td>
+<td align="center">Australia / United States</td>
+<td align="center">“aussie dollar”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/NZDUSD/overview" target="_blank" rel="noopener noopener">NZD/USD</a></td>
+<td align="center">New Zealand / United States</td>
+<td align="center">“kiwi dollar”</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>The majors are the most <strong>liquid</strong>&nbsp;in the world.</p>
+<p><a href="https://www.babypips.com/forexpedia/liquidity" target="_blank" rel="noopener noopener">Liquidity</a> is used to describe the level of activity in the financial market.</p>
+<p></p><div data-react-class="Ads/AdUnit" data-react-props="{&quot;slot_id&quot;:&quot;f235fd93d43aff11&quot;,&quot;unit_id&quot;:&quot;inline&quot;}" data-react-cache-id="Ads/AdUnit-0" class="ad-unit inline no-ad"><div class="AdUnit-module__container___ukZkI" style="min-width: 300px; min-height: 250px;"><div id="f235fd93d43aff11" class=""><div id="google_ads_iframe_/4062275/BP3_Inline_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div>In forex, it’s based on the number of active traders buying and selling a specific currency pair and the <a href="https://www.babypips.com/forexpedia/volume" target="_blank" rel="noopener noopener">volume</a> being traded.<p></p>
+<p>The more frequently traded something is the higher its liquidity.</p>
+<p>For example, more people trade the EUR/USD currency pair and at higher volumes than the AUD/USD currency pair.</p>
+<p>This means that EUR/USD is more liquid than AUD/USD.</p>
+<h2>Major Cross-Currency Pairs or Minor Currency Pairs</h2>
+<p>Currency pairs that include any two of the major currencies <em>except</em> the U.S. dollar are known as <strong>cross-currency pairs</strong> or simply as the “<strong>crosses</strong>.”</p>
+<p>Major crosses are also known as “<strong>minors</strong>.”</p>
+<p>While not as frequently traded as the majors, the crosses are still pretty liquid and still provide plenty of trading opportunities.</p>
+<blockquote class="tip"><p>Don’t confuse <em>minor</em> currency pairs with the seven <em>major</em> currency pairs, all of which <strong><em>include</em> the U. S. dollar</strong> against one of the six other most liquid currencies in the world.</p></blockquote>
+<p></p><div data-react-class="Ads/AdUnit" data-react-props="{&quot;slot_id&quot;:&quot;005e7dc9ee71d96f&quot;,&quot;unit_id&quot;:&quot;inline_half_page&quot;}" data-react-cache-id="Ads/AdUnit-0" class="ad-unit inline_half_page no-ad"><div class="AdUnit-module__container___ukZkI" style="min-width: 300px; min-height: 250px;"><div id="005e7dc9ee71d96f" class=""><div id="google_ads_iframe_/4062275/BP3_Half_page_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div>The most actively traded crosses are derived from the three major non-USD currencies: <strong>EUR</strong>, <strong>JPY</strong>, and <strong>GBP</strong>.<p></p>
+<h3>Euro Crosses</h3>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th>Currency Pair</th>
+<th>Countries</th>
+<th><strong>FX Geek Speak</strong></th>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURCHF/overview" target="_blank" rel="noopener noopener">EUR/CHF</a></td>
+<td align="center">Eurozone / Switzerland</td>
+<td align="center">“euro swissy”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURGBP/overview" target="_blank" rel="noopener noopener">EUR/GBP</a></td>
+<td align="center">Eurozone / United Kingdom</td>
+<td align="center">“euro pound”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURCAD/overview" target="_blank" rel="noopener noopener">EUR/CAD</a></td>
+<td align="center">Eurozone / Canada</td>
+<td align="center">“euro loonie”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURAUD/overview" target="_blank" rel="noopener noopener">EUR/AUD</a></td>
+<td align="center">Eurozone / Australia</td>
+<td align="center">“euro aussie”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURNZD/overview" target="_blank" rel="noopener noopener">EUR/NZD</a></td>
+<td align="center">Eurozone / New Zealand</td>
+<td align="center">“euro kiwi”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURSEK/overview" target="_blank" rel="noopener noopener">EUR/SEK</a></td>
+<td align="center">Eurozone / Sweden</td>
+<td align="center">“euro stockie”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURNOK/overview" target="_blank" rel="noopener noopener">EUR/NOK</a></td>
+<td align="center">Eurozone / Norway</td>
+<td align="center">“euro nockie”</td>
+</tr>
+</tbody>
+</table></div></div>
+<h3>Yen Crosses</h3>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th>Currency Pair</th>
+<th>Countries</th>
+<th>FX Geek Speak</th>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/EURJPY/overview" target="_blank" rel="noopener noopener">EUR/JPY</a></td>
+<td align="center">Eurozone / Japan</td>
+<td align="center">“euro yen” or “yuppy”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/GBPJPY/overview" target="_blank" rel="noopener noopener">GBP/JPY</a></td>
+<td align="center">United Kingdom / Japan</td>
+<td align="center">“pound yen” or “guppy”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/CHFJPY/overview" target="_blank" rel="noopener noopener">CHF/JPY</a></td>
+<td align="center">Switzerland / Japan</td>
+<td align="center">“swissy yen”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/CADJPY/overview" target="_blank" rel="noopener noopener">CAD/JPY</a></td>
+<td align="center">Canada / Japan</td>
+<td align="center">“loonie yen”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/AUDJPY/overview" target="_blank" rel="noopener noopener">AUD/JPY</a></td>
+<td align="center">Australia / Japan</td>
+<td align="center">“aussie yen”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/NZDJPY/overview" target="_blank" rel="noopener noopener">NZD/JPY</a></td>
+<td align="center">New Zealand / Japan</td>
+<td align="center">“kiwi yen”</td>
+</tr>
+</tbody>
+</table></div></div>
+<h3>Pound Crosses</h3>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th>Pair</th>
+<th>Countries</th>
+<th>FX Geek Speak</th>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/GBPCHF/overview" target="_blank" rel="noopener noopener">GBP/CHF</a></td>
+<td align="center">United Kingdom / Switzerland</td>
+<td align="center">“pound swissy”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/GBPAUD/overview" target="_blank" rel="noopener noopener">GBP/AUD</a></td>
+<td align="center">United Kingdom / Australia</td>
+<td align="center">“pound aussie”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/GBPCAD/overview" target="_blank" rel="noopener noopener">GBP/CAD</a></td>
+<td align="center">United Kingdom / Canada</td>
+<td align="center">“pound loonie”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/GBPNZD/overview" target="_blank" rel="noopener noopener">GBP/NZD</a></td>
+<td align="center">United Kingdom / New Zealand</td>
+<td align="center">“pound kiwi”</td>
+</tr>
+</tbody>
+</table></div></div>
+<h3>Other Crosses</h3>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr style="height: 26px;">
+<th style="height: 26px;">Pair</th>
+<th style="height: 26px;">Countries</th>
+<th style="height: 26px;">FX Geek Speak</th>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px;" align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/AUDCHF/overview" target="_blank" rel="noopener noopener">AUD/CHF</a></td>
+<td style="height: 26px;" align="center">Australia / Switzerland</td>
+<td style="height: 26px;" align="center">“aussie swissy”</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px;" align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/AUDCAD/overview" target="_blank" rel="noopener noopener">AUD/CAD</a></td>
+<td style="height: 26px;" align="center">Australia / Canada</td>
+<td style="height: 26px;" align="center">“aussie loonie”</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px;" align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/AUDNZD/overview">AUD/NZD</a></td>
+<td style="height: 26px;" align="center">Australia / New Zealand</td>
+<td style="height: 26px;" align="center">“aussie kiwi”</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px;" align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/CADCHF/overview" target="_blank" rel="noopener noopener">CAD/CHF</a></td>
+<td style="height: 26px;" align="center">Canada / Switzerland</td>
+<td style="height: 26px;" align="center">“loonie swissy”</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px;" align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/NZDCHF/overview" target="_blank" rel="noopener noopener">NZD/CHF</a></td>
+<td style="height: 26px;" align="center">New Zealand / Switzerland</td>
+<td style="height: 26px;" align="center">“kiwi swissy”</td>
+</tr>
+<tr style="height: 26px;">
+<td style="height: 26px;" align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/NZDCAD/overview" target="_blank" rel="noopener noopener">NZD/CAD</a></td>
+<td style="height: 26px;" align="center">New Zealand / Canada</td>
+<td style="height: 26px;" align="center">“kiwi loonie”</td>
+</tr>
+</tbody>
+</table></div></div>
+<h2>Exotic Currency Pairs</h2>
+<p><img loading="lazy" class="alignnone lazyload" style="text-align: center; display: block; margin: 0 auto 10px;" title="Exotic Currency Pairs" src="https://bpcdn.co/images/2016/05/pre-school-exotic-belly-dancers.png" alt="Exotic Currency Pairs" width="262" height="294"></p>
+<p>No, exotic pairs are not exotic belly dancers who happen to be twins.</p>
+<p>An <strong>exotic currency</strong> is a currency from countries with&nbsp;developing or emerging markets.</p>
+<p><strong>Exotic currency pairs</strong> are made up of one major currency paired with the currency of an emerging economy, such as Brazil, Mexico, Chile, Turkey, or Hungary.</p>
+<p>Basically, an exotic currency pair includes&nbsp;<b>one major currency alongside an exotic currency.&nbsp;</b></p>
+<p></p><div data-react-class="Ads/AdUnit" data-react-props="{&quot;slot_id&quot;:&quot;77721cc2601302b3&quot;,&quot;unit_id&quot;:&quot;inline&quot;}" data-react-cache-id="Ads/AdUnit-0" class="ad-unit inline no-ad"><div class="AdUnit-module__container___ukZkI" style="min-width: 300px; min-height: 250px;"><div id="77721cc2601302b3" class=""><div id="google_ads_iframe_/4062275/BP3_Inline_1__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div>The chart below contains a few examples of exotic currency pairs.<p></p>
+<p>Wanna take a shot at guessing what those other currency symbols stand for?</p>
+<p>Depending on your forex broker, you may see the following exotic currency pairs so it’s good to know what they are.</p>
+<p>Keep in mind that these pairs aren’t as heavily traded as the “majors” or “crosses,” so the transaction costs associated with trading these pairs are usually bigger.</p>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th>Currency Pair</th>
+<th>Countries</th>
+<th>FX Geek Speak</th>
+</tr>
+<tr>
+<td align="center" width="90">USD/BRL</td>
+<td align="center">United States / Brazil</td>
+<td align="center">“dollar real”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDHKD/overview" target="_blank" rel="noopener noopener">USD/HKD</a></td>
+<td align="center">United States / Hong Kong</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center" width="90">USD/SAR</td>
+<td align="center">United States / Saudi Arabia</td>
+<td align="center">“dollar riyal”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDSGD/overview?source=gain" target="_blank" rel="noopener noopener">USD/SGD</a></td>
+<td align="center">United States / Singapore</td>
+<td align="center">“dollar sing”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDZAR/overview" target="_blank" rel="noopener noopener">USD/ZAR</a></td>
+<td align="center">United States / South Africa</td>
+<td align="center">“dollar rand”</td>
+</tr>
+<tr>
+<td align="center" width="90">USD/THB</td>
+<td align="center">United States / Thailand</td>
+<td align="center">“dollar baht”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDMXN/overview" target="_blank" rel="noopener noopener">USD/MXN</a></td>
+<td align="center">United States / Mexico</td>
+<td align="center">“dollar mex”</td>
+</tr>
+<tr>
+<td align="center" width="90"><a href="https://marketmilk.babypips.com/symbols/USDRUB/overview?source=gain" target="_blank" rel="noopener noopener">USD/RUB</a></td>
+<td align="center">United States / Russia</td>
+<td align="center">“dollar ruble” or “Barney”</td>
+</tr>
+<tr>
+<td align="center" width="90">USD/PLN</td>
+<td align="center">United States / Poland</td>
+<td align="center">“dollar zloty”</td>
+</tr>
+<tr>
+<td align="center" width="90">USD/CLP</td>
+<td align="center">United States/ Chile</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div></div>
+<p>It’s not unusual to see spreads that are two or three times bigger than that of EUR/USD or USD/JPY.</p>
+<p>Due to the overall lower degree of liquidity, exotic currency pairs tend to be far more sensitive to economic and geopolitical events.</p>
+<p>For example, a political scandal or unexpected election results can cause an exotic pair’s exchange rate to swing violently.</p>
+<p>So if you want to trade exotics currency pairs, remember to factor this into your decision.</p>
+<p>For those of y’all who are really mesmerized by exotics, here’s a more comprehensive list.</p>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW">
+<tbody>
+<tr>
+<th>Currency Code</th>
+<th>Country</th>
+<th>Currency Code</th>
+<th>Country</th>
+</tr>
+<tr>
+<td>AED</td>
+<td>UAE Dirham</td>
+<td>ARS</td>
+<td>Argentinean Peso</td>
+</tr>
+<tr>
+<td>AFN</td>
+<td>Afghanistan Afghani</td>
+<td>GEL</td>
+<td>Georgian Lari</td>
+</tr>
+<tr>
+<td>MYR</td>
+<td>Malaysian Ringgit</td>
+<td>AMD</td>
+<td>Armenian Dram</td>
+</tr>
+<tr>
+<td>GYD</td>
+<td>Guyanese Dollar</td>
+<td>MZN</td>
+<td>Mozambique new Metical</td>
+</tr>
+<tr>
+<td>AWG</td>
+<td>Aruban Florin</td>
+<td>IDR</td>
+<td>Indonesian Rupiah</td>
+</tr>
+<tr>
+<td>OMR</td>
+<td>Omani Rial</td>
+<td>AZN</td>
+<td>Azerbaijan New Manat</td>
+</tr>
+<tr>
+<td>IQD</td>
+<td>Iraqi Dinar</td>
+<td>QAR</td>
+<td>Qatari Rial</td>
+</tr>
+<tr>
+<td>BHD</td>
+<td>Bahraini Dinar</td>
+<td>IRR</td>
+<td>Iranian Rial</td>
+</tr>
+<tr>
+<td>SLL</td>
+<td>Sierra Leone Leone</td>
+<td>BWP</td>
+<td>Botswana Pula</td>
+</tr>
+<tr>
+<td>JOD</td>
+<td>Jordanian Dinar</td>
+<td>TJS</td>
+<td>Tajikistani Somoni</td>
+</tr>
+<tr>
+<td>BYR</td>
+<td>Belarusian Ruble</td>
+<td>KGS</td>
+<td>Kyrgyzstani Som</td>
+</tr>
+<tr>
+<td>TMT</td>
+<td>Turkmenistan new Manat</td>
+<td>CDF</td>
+<td>Congolese Franc</td>
+</tr>
+<tr>
+<td>LBP</td>
+<td>Lebanese Pound</td>
+<td>TZS</td>
+<td>Tanzanian Schilling</td>
+</tr>
+<tr>
+<td>DZD</td>
+<td>Algerian Dinar</td>
+<td>LRD</td>
+<td>Liberian Dollar</td>
+</tr>
+<tr>
+<td>UZS</td>
+<td>Uzbekistan Som</td>
+<td>EGP</td>
+<td>Egyptian Pound</td>
+</tr>
+<tr>
+<td>MAD</td>
+<td>Moroccan Dirham</td>
+<td>WST</td>
+<td>Samoan Tala</td>
+</tr>
+<tr>
+<td>EEK</td>
+<td>Estonian Kroon</td>
+<td>MNT</td>
+<td>Mongolian Tugrik</td>
+</tr>
+<tr>
+<td>MWK</td>
+<td>Malawi Kwacha</td>
+<td>ETB</td>
+<td>Ethiopian Birr</td>
+</tr>
+<tr>
+<td>THB</td>
+<td>Thai Baht</td>
+<td>TRY</td>
+<td>New Turkish Lira</td>
+</tr>
+<tr>
+<td>ZAR</td>
+<td>South African Rand</td>
+<td>ZWD</td>
+<td>Zimbabwe Dollar</td>
+</tr>
+<tr>
+<td>BRL</td>
+<td>Brazilian Real</td>
+<td>CLP</td>
+<td>Chilean Peso</td>
+</tr>
+<tr>
+<td>CNY</td>
+<td>Chinese Yuan Renminbi</td>
+<td>CZK</td>
+<td>Czech Koruna</td>
+</tr>
+<tr>
+<td>HKD</td>
+<td>Hong Kong Dollar</td>
+<td>HUF</td>
+<td>Hungarian Forint</td>
+</tr>
+<tr>
+<td>ILS</td>
+<td>Israeli Shekel</td>
+<td>INR</td>
+<td>Indian Rupee</td>
+</tr>
+<tr>
+<td>ISK</td>
+<td>Icelandic Krona</td>
+<td>KRW</td>
+<td>South Korean Won</td>
+</tr>
+<tr>
+<td>KWD</td>
+<td>Kuwaiti Dinar</td>
+<td>MXN</td>
+<td>Mexican Peso</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td>Philippine Peso</td>
+<td>PKR</td>
+<td>Pakistani Rupee</td>
+</tr>
+<tr>
+<td>PLN</td>
+<td>Polish Zloty</td>
+<td>RUB</td>
+<td>Russian Ruble</td>
+</tr>
+<tr>
+<td>SAR</td>
+<td>Saudi Arabian Riyal</td>
+<td>SGD</td>
+<td>Singaporean Dollar</td>
+</tr>
+<tr>
+<td>TWD</td>
+<td>Taiwanese Dollar</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div></div>
+<blockquote class="info"><p><strong>DID YOU KNOW?</strong> There are <strong>180 legal currencies</strong> in the world, as recognized by the United Nations.&nbsp; That’s a lot of potential currency pairs! Unfortunately, not all of them are readable. Forex brokers tend to offer traders up to 70 currency pairs.</p></blockquote>
+<p>Aside from the three main categories of currency pairs, there are other “groups” of currencies that are thrown around in the FX world that you should be aware of.</p>
+<h2>G10 Currencies</h2>
+<p>The G10 currencies are ten of the most heavily traded currencies in the world, which are also ten of the world’s most liquid currencies.</p>
+<p>Traders regularly buy and sell them in an open market with minimal impact on their own international exchange rates.</p>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th style="text-align: center;">Country</th>
+<th style="text-align: center;">Currency Name</th>
+<th style="text-align: center;">Currency Code</th>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">United States</td>
+<td style="text-align: center;" align="center">dollar</td>
+<td style="text-align: center;" align="center">USD</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">European Union</td>
+<td style="text-align: center;" align="center">euro</td>
+<td style="text-align: center;" align="center">EUR</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">United Kingdom</td>
+<td style="text-align: center;" align="center">pound</td>
+<td style="text-align: center;" align="center">GBP</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Japan</td>
+<td style="text-align: center;" align="center">yen</td>
+<td style="text-align: center;" align="center">JPY</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Australia</td>
+<td style="text-align: center;" align="center">dollar</td>
+<td style="text-align: center;" align="center">AUD</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">New Zealand</td>
+<td style="text-align: center;" align="center">dollar</td>
+<td style="text-align: center;" align="center">NZD</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Canada</td>
+<td style="text-align: center;" align="center">dollar</td>
+<td style="text-align: center;" align="center">CAD</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Switzerland</td>
+<td style="text-align: center;" align="center">franc</td>
+<td style="text-align: center;" align="center">CHF</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Norway</td>
+<td style="text-align: center;" align="center">krone</td>
+<td style="text-align: center;" align="center">NOK</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Sweden</td>
+<td style="text-align: center;" align="center">krona</td>
+<td style="text-align: center;" align="center">SEK</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Denmark</td>
+<td style="text-align: center;" align="center">krone</td>
+<td style="text-align: center;" align="center">DKK</td>
+</tr>
+</tbody>
+</table></div></div>
+<h2><strong>The Scandies</strong></h2>
+<p>Scandinavia is a subregion in Northern Europe, with strong historical, cultural, and linguistic ties.</p>
+<p>The term “<strong>Scandinavia</strong>” in local usage covers the three kingdoms of <strong>Denmark, Norway, and Sweden.</strong></p>
+<p></p><div data-react-class="Ads/AdUnit" data-react-props="{&quot;slot_id&quot;:&quot;db8e6ef50f7f3e7b&quot;,&quot;unit_id&quot;:&quot;inline&quot;}" data-react-cache-id="Ads/AdUnit-0" class="ad-unit inline no-ad"><div class="AdUnit-module__container___ukZkI" style="min-width: 300px; min-height: 250px;"><div id="db8e6ef50f7f3e7b" class=""><div id="google_ads_iframe_/4062275/BP3_Inline_2__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div>Together, their currencies are known as the “<strong>Scandies</strong>“.<p></p>
+<p>Back in the day, Denmark and Sweden established the <a href="https://en.wikipedia.org/wiki/Scandinavian_Monetary_Union" target="_blank" rel="noopener noopener">Scandinavian Monetary Union</a> to merge their currencies to a gold standard. Norway joined later.</p>
+<p>This meant that these countries now had one currency, with the same monetary value, with the exception that each of these countries minted its own coins.</p>
+<p>But then World War I happened, the gold standard was abandoned and the Scandinavian Monetary Union disbanded.&nbsp; These countries decided to keep the currency, even if the values were separate from one another. And this remains the state of things.</p>
+<p>If you notice their currency names, they all look similar. That’s because the word “krone or krona” literally means “crown”, and the differences in spelling of the name represent the differences between the North Germanic languages.</p>
+<p>Crown currencies. What a cool name huh?</p>
+<p>I don’t know about you, but saying “Hook me up with some crowns yo.” sounds way cooler than “Hook me up with some dollahs yo.”</p>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th style="text-align: center;">Country</th>
+<th style="text-align: center;">Currency Name</th>
+<th style="text-align: center;">Currency Code</th>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Denmark</td>
+<td style="text-align: center;" align="center">krone</td>
+<td style="text-align: center;" align="center">DKK</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Sweden</td>
+<td style="text-align: center;" align="center">krona</td>
+<td style="text-align: center;" align="center">SEK</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Norway</td>
+<td style="text-align: center;" align="center">krone</td>
+<td style="text-align: center;" align="center">NOK</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>SEK and NOK also have cool nicknames, “<strong>Stockie</strong>” and “<strong>Nokie</strong>“.</p>
+<p>So when paired with the U.S. dollar,&nbsp; USD/SEK is read “dollar stockie”&nbsp; and USD/NOK is read “dollar nockie”.</p>
+<h2><strong>CEE Currencies</strong></h2>
+<p>“<strong>CEE</strong>” stands for <strong>Central and Eastern Europe</strong>.</p>
+<p>Central and Eastern Europe is a term encompassing the countries in <strong>Central Europe,&nbsp;</strong>&nbsp;the <strong>Baltics</strong>,<strong> Eastern Europe</strong>, and <strong>Southeast Europe</strong> (the Balkans), usually meaning former communist states from the <strong>Eastern Bloc</strong> (Warsaw Pact) in Europe.</p>
+<p><strong></strong></p><div data-react-class="Ads/AdUnit" data-react-props="{&quot;slot_id&quot;:&quot;796d93a0854f2bc9&quot;,&quot;unit_id&quot;:&quot;inline_sidebar_med_rect&quot;}" data-react-cache-id="Ads/AdUnit-0" class="ad-unit inline_sidebar_med_rect no-ad"><div class="AdUnit-module__container___ukZkI" style="min-width: 300px; min-height: 250px;"><div id="796d93a0854f2bc9" class=""><div id="google_ads_iframe_/4062275/BP3_Med-Rect-Sdbr_1__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div></div></div><strong>Central and Eastern European Countries (CEECs)</strong> is an OECD term for the group of countries comprising Albania, Bulgaria, Croatia, the Czech Republic, Hungary, Poland, Romania, the Slovak Republic, Slovenia, and the three Baltic States: Estonia, Latvia, and Lithuania.<p></p>
+<p>Regarding the FX market, there are four main CEE currencies to be aware of.</p>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th style="text-align: center;">Country</th>
+<th style="text-align: center;">Currency Name</th>
+<th style="text-align: center;">Currency Code</th>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Hungary</td>
+<td style="text-align: center;" align="center">forint</td>
+<td style="text-align: center;" align="center">HUF</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Czech Republic</td>
+<td style="text-align: center;" align="center">koruna</td>
+<td style="text-align: center;" align="center">CZK</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Poland</td>
+<td style="text-align: center;" align="center">zloty</td>
+<td style="text-align: center;" align="center">PLN</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Romania</td>
+<td style="text-align: center;" align="center">leu</td>
+<td style="text-align: center;" align="center">RON</td>
+</tr>
+</tbody>
+</table></div></div>
+<h2><strong>BRIICS</strong></h2>
+<p><strong>BRIICS</strong>&nbsp;is the acronym coined for the association of six major emerging national economies: Brazil, Russia, India, Indonesia, China, and South Africa.</p>
+<p>Originally the first four were grouped as “<strong>BRIC</strong>” (or “the BRICs”). BRICs was a term created by Goldman Sachs to name today’s new high-growth emerging economies.</p>
+<p>BRIICS is the term created by the <a href="https://en.wikipedia.org/wiki/OECD" target="_blank" rel="noopener noopener">OECD</a>, when it&nbsp;added Indonesia and South Africa.</p>
+<div><div class="ScrollableTable-module__container___hfbgx"><div class="ScrollableTable-module__overlay___LciK8" style="top: 0px;"></div><table class="ScrollableTable-module__table___neLIx ScrollableTable-module__scrollable___qWhmW" border="0" width="525">
+<tbody>
+<tr>
+<th style="text-align: center;">Country</th>
+<th style="text-align: center;">Currency Name</th>
+<th style="text-align: center;">Currency Code</th>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Brazil</td>
+<td style="text-align: center;" align="center">real</td>
+<td style="text-align: center;" align="center">BRL</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Russia</td>
+<td style="text-align: center;" align="center">ruble</td>
+<td style="text-align: center;" align="center">RUB</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">India</td>
+<td style="text-align: center;" align="center">rupee</td>
+<td style="text-align: center;" align="center">INR</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">Indonesia</td>
+<td style="text-align: center;" align="center">rupiah</td>
+<td style="text-align: center;" align="center">IDR</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">China</td>
+<td style="text-align: center;" align="center">yuan</td>
+<td style="text-align: center;" align="center">CNY</td>
+</tr>
+<tr>
+<td style="text-align: center;" align="center" width="90">South Africa</td>
+<td style="text-align: center;" align="center">rand</td>
+<td style="text-align: center;" align="center">ZAR</td>
+</tr>
+</tbody>
+</table></div></div>
+<h2>Summary</h2>
+<p>Whew! That was a lot of information on currencies but you just raised your FX IQ points!&nbsp;🧠</p>
+<p>Let’s summarize what you’ve learned in a series of questions:</p>
+<p><strong>What is a currency pair in forex?</strong><br>
+A currency pair is a pairing of currencies where the value of one is relative to the other. For example, GBP/USD is the value of the British pound relative to the U.S. dollar.</p>
+<p><strong>What are the major currency pairs?</strong><br>
+Major currency pairs (“majors”) are those that include the U.S. dollar and are the most frequently traded. There are seven of them: EUR/USD, USD/JPY, GBP/USD, USD/CAD, USD/CHF, AUD/USD, and NZD/USD.</p>
+<p><strong>What are the currency crosses?</strong><br>
+Currency crosses (“crosses”) are the more frequently traded currencies that do NOT include the U.S. dollar in their pairing. Crosses include EUR/GBP, EUR/CAD, GBP/JPY, EUR/CHF, EUR/JPY, etc.</p>
+<p><strong>How many currency pairs exist?</strong><br>
+There are HUNDREDS of currency pairs in existence but not all can be traded in the FX market. The United Nations currently recognizes 180 currencies. If you were to pair each currency up with another, it’s a lot.</p>
+
+</div>
