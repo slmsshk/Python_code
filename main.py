@@ -11,7 +11,3 @@ hp.title()
 
 hp.gi()
 
-# import keras
-# st.write(keras.__version__)
-# import wrapt
-# st.write(wrapt.__version__)
