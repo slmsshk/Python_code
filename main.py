@@ -10,3 +10,6 @@ st.set_page_config(page_title="Forecasting Models", page_icon="📈")
 hp.title()
 
 hp.gi()
+
+import keras
+st.write(keras.__version__)
