@@ -3,6 +3,7 @@ import streamlit as st
 import yfinance as yf
 import plotly.express as px
 import plotly.graph_objects as go
+import matplotlib.pyplot as plt
 
 
 st.set_page_config(page_title="Eur/USD", page_icon='eurusd.png',initial_sidebar_state = "expanded")
@@ -102,7 +103,7 @@ X_train,X_test,y_train,y_test=X_arr[:-100],X_arr[-100:],Y_arr[:-100],Y_arr[-100:
 
 st.write(f'input data shape{X_train.shape}')
 
-st.sidebar.image("images.jpg")
+st.sidebar.image("pages/images.jpg")
 # ================================================================
 # Model Training
 col3,col4,col5=st.columns(3)
@@ -125,3 +126,36 @@ nn.summary(print_fn=lambda x: st.text(x))
 nn.fit(X_train,y_train,epochs=100,batch_size=100)
 
 
+pred=nn.predict(X_test)
+
+# plt.plot(hist.Close)
+fig,ax=plt.subplots()
+ax.plot(pred,label='prediction',color='orange')
+ax.plot(y_test,label='Actual',color='red')
+# plt.xticks(hist.index[:-100])
+ax.legend()
+st.pyplot(fig)
+
+fp = eur.history(interval='1m',period='60m')
+fp.Close.values
+
+# X=[]
+# # end=3
+# x=fp.Close.values
+# for i in range(len(x)):
+#     end+=1
+#     if end>=len(x)-1:break
+#     X.append(x[i:end])
+# #     Y.append(x[end])
+
+# # import numpy as np
+# new_points=np.array(X).reshape(np.array(X).shape[0], 4,1)
+# new_points.shape
+
+# pred1=nn.predict(new_points)
+
+# fig1,ax1=plt.subplots()
+# ax1.plot(x,label='real')
+# ax1.plot(pred1)
+# ax1.legend()
+# st.pyplot(fig1)
