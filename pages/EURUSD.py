@@ -102,7 +102,7 @@ X_train,X_test,y_train,y_test=X_arr[:-100],X_arr[-100:],Y_arr[:-100],Y_arr[-100:
 
 st.write(f'input data shape{X_train.shape}')
 
-st.sidebar.image("pages\images.jpg")
+st.sidebar.image("images.jpg")
 # ================================================================
 # Model Training
 col3,col4,col5=st.columns(3)
