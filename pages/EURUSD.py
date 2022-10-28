@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 
-st.set_page_config(page_title="Eur/USD", page_icon='pages\eurusd.png',initial_sidebar_state = "expanded")
+st.set_page_config(page_title="Eur/USD", page_icon='eurusd.png',initial_sidebar_state = "expanded")
 
 st.title('EUR/USD!!!!')
 
@@ -65,7 +65,7 @@ st.write(f"<p style='font-size:15px;'>Preparing Data</p>",unsafe_allow_html=True
 st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters for model training</p>",unsafe_allow_html=True)
 
 end=st.sidebar.number_input("Enter how many lags you want to use",value=1,min_value=1,max_value=10,step=1)
-
+sp=end
 future=st.sidebar.number_input("Enter how many steps you want to predict in future",value=1,min_value=1,max_value=3,step=1)
 
 st.code("""
@@ -96,7 +96,7 @@ col2.write((X[-5:],Y[-5:]))
 import numpy as np
 
 X_arr,Y_arr=np.array(X),np.array(Y)
-X_arr=X_arr.reshape(X_arr.shape[:][0],future,1)
+X_arr=X_arr.reshape(X_arr.shape[:][0],sp,1)
 
 X_train,X_test,y_train,y_test=X_arr[:-100],X_arr[-100:],Y_arr[:-100],Y_arr[-100:]
 
@@ -110,5 +110,18 @@ col4.header('Model Training')
 
 from keras.models import Sequential
 from keras.layers import LSTM,Dense
+
+#Architecture
+nn=Sequential(name='Sequence_LSTM')
+nn.add(LSTM(50,activation='relu',input_shape=(sp,1),name='input_layer_lstm'))
+nn.add(Dense(50,name='Hidden_layer_Dense1',activation='LeakyReLU'))
+nn.add(Dense(50,name='Hidden_layer_Dense2'))
+nn.add(Dense(future,name='Output_layer_Dense'))
+nn.compile(loss='mse',optimizer='adam')
+nn.summary(print_fn=lambda x: st.text(x))
+
+# print(nn.summary())
+# st.write(f'<p>{nn.summary()}</p>',unsafe_allow_html=True)
+nn.fit(X_train,y_train,epochs=100,batch_size=100)
 
 
