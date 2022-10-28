@@ -21,7 +21,7 @@ interval=st.sidebar.selectbox(label='Select Interval',options=('1m', '2m', '5m',
 period='1m'
 # # 1m,
 if interval =="1m":
-    periods=st.sidebar.selectbox(label='Enter Period',options=['1d','5d','1wk'],default=)
+    periods=st.sidebar.selectbox(label='Enter Period',options=['1d','5d','1wk'])
 # # 2m,5m,15m,30m
 elif interval in ["2m",'5m', '15m','30m']:
     period=st.sidebar.selectbox(label='Select Period',options=['1d','5d','1wk','1mo'])
