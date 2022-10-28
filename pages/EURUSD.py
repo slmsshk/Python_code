@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 
-st.set_page_config(page_title="Eur/USD", page_icon='pages\eurusd.png')
+st.set_page_config(page_title="Eur/USD", page_icon='pages\eurusd.png',initial_sidebar_state = "expanded")
 
 st.title('EUR/USD!!!!')
 
@@ -66,7 +66,7 @@ st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2
 
 end=st.sidebar.number_input("Enter how many lags you want to use",value=1,min_value=1,max_value=10,step=1)
 
-future=st.sidebar.number_input("Enter how many steps you want to predict in future",value=1,min_value=1,max_value=5,step=1)
+future=st.sidebar.number_input("Enter how many steps you want to predict in future",value=1,min_value=1,max_value=3,step=1)
 
 st.code("""
 X=[]
@@ -84,15 +84,25 @@ Y=[]
 x=hist.Close.dropna().values
 
 for i in range(len(x)):
-    end+=1
     if end>=len(x)-1:break
     X.append(x[i:end])
     Y.append(x[end:end+future])
+    end+=1
 
 col1,col2=st.columns(2)
 col1.write((X.pop(-1),Y.pop(-1)))
 col2.write((X[-5:],Y[-5:]))
 
+import numpy as np
+
+X_arr,Y_arr=np.array(X),np.array(Y)
+X_arr=X_arr.reshape(X_arr.shape[:][0],future,1)
+
+X_train,X_test,y_train,y_test=X_arr[:-100],X_arr[-100:],Y_arr[:-100],Y_arr[-100:]
+
+st.write(f'input data shape{X_train.shape}')
+
+st.sidebar.image("pages\images.jpg")
 # ================================================================
 # Model Training
 col3,col4,col5=st.columns(3)
