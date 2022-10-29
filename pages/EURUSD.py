@@ -109,10 +109,10 @@ st.write(f'output data shape{y_train.shape}')
 
 st.sidebar.image("pages/images.jpg")
 
-if st.button("""do you want to train the model""",help='click me to train the model'):
+if st.button("""Train the model""",help='click me to train the model'):
     tt.model_training(future=future,sp=sp,X_train=X_train,y_train=y_train)
     st.write('see the training ')
 
-if st.button("""Click to Evaluate the model""",help='click me to eval the model'):
+if st.button("""Evaluate the model""",help='click me to eval the model'):
     tt.Evaluation(X_test=X_test,y_test=y_test)
     st.write('see the evalaution')
