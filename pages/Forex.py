@@ -1,4 +1,3 @@
-from functools import cache
 import streamlit as st
 import yfinance as yf
 import plotly.express as px
@@ -68,7 +67,7 @@ fig=px.line(data_frame=hist,y='Close')
 
 st.write(fig)
 # ===================================================================
-
+# Data Preparation
 
 st.write(f"<p style='font-size:15px;'>Preparing Data</p>",unsafe_allow_html=True)
 
