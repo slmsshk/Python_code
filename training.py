@@ -27,6 +27,7 @@ def model_training(future,X_train,y_train,sp):
 
     nn.fit(X_train,y_train,epochs=100,batch_size=100)
     nn.save("Trained")
+    # st.progress()
     # st.write(' to predictions')
 # ========================================================
 # st.write()
@@ -40,6 +41,23 @@ def Evaluation(X_test,y_test):
     ax.plot(y_test[:,-1],label='Actual',color='red')
     # plt.xticks(hist.index[:-100])
     ax.legend()
+    st.pyplot(fig)
+
+def pred(interval,period,sp,pair):
+    import yfinance as yf
+    import numpy as np
+    nn=keras.models.load_model('Trained')
+    x=yf.Ticker(pair)
+    pp=x.history(interval=interval,period=period).Close[-sp:].values.reshape(1,sp,1)
+    y=x.history(interval=interval,period=period).Close[-sp:].values
+    st.write(type(pp),pp[0])
+    predict=nn.predict(pp)
+    fig,ax=plt.subplots()
+    ax.plot(np.append(y,values=predict))
+    ax.set_xticks([i+1 for i in range(sp)])
+    # ax.legend()
+    st.write(predict)
+    # ax.plot(predict,color='green')
     st.pyplot(fig)
 
     

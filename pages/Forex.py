@@ -121,3 +121,10 @@ if st.button("""Train the model""",help='click me to train the model'):
 if st.button("""Evaluate the model""",help='click me to eval the model'):
     tt.Evaluation(X_test=X_test,y_test=y_test)
     st.write('see the evalaution')
+
+# try:
+if st.button(f"""Get predicition for {interval} interval""",help='click me for prediction'):
+    tt.pred(interval=interval,sp=sp,period=period,pair=pair)
+    st.write('see the prediction')
+# except:
+#     st.write("idiot train the model first.")
