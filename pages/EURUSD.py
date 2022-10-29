@@ -36,15 +36,18 @@ elif interval in ['60m']:
 else:
     period=st.sidebar.selectbox(label='Select Period',options=['1d','5d','1wk','1mo','2mo','3mo','6mo','1y','3y','5y','10y','ytd','max'])
 
-st.code(f"""
-import yfinance as yf
-eur=yf.Ticker("EURUSD=X")
-hist = eur.history(interval={interval},period={period})
-""")
-
-eur=yf.Ticker("USDJPY=X")
+majors=['USDJPY','EURUSD','AUDUSD','EURUSD','GBPUSD','NZDUSD','USDCAD','USDCHF']
+pair=st.sidebar.selectbox(label='Select the pair you want to trade',options=majors)+"=X"
+eur=yf.Ticker(pair)
 hist = eur.history(interval=interval,period=period)
 eur.history()
+
+
+st.code(f"""
+import yfinance as yf
+eur=yf.Ticker({pair})
+hist = eur.history(interval={interval},period={period})
+""")
 
 # ==================================================================
 # Candle Stick Chart
