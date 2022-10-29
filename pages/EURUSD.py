@@ -4,9 +4,9 @@ import yfinance as yf
 import plotly.express as px
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
+import training as tt
 
-
-st.set_page_config(page_title="Eur/USD", page_icon='eurusd.png',initial_sidebar_state = "expanded")
+st.set_page_config(page_title="Eur/USD", page_icon='pages/eurusd.png',initial_sidebar_state = "expanded")
 
 st.title('EUR/USD!!!!')
 
@@ -17,8 +17,11 @@ st.markdown(f"<p style='background-color:darkgreen;padding:5px;color:#f2f3f4;'>F
 # Valid intervals: [1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo] 
 #  Valid periods: 1d,5d,1wk,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
 
-st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters to fetch Data</p> <p style='font-size:10px;'><em>enter interval and period to get rid of the error<em></p>",unsafe_allow_html=True)
+st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters to fetch Data</p>",unsafe_allow_html=True)
+
+
 interval=st.sidebar.selectbox(label='Select Interval',options=('1m', '2m', '5m', '15m', '30m', '60m', '1d', '5d', '1wk', '1mo', '3mo'))
+
 period='1d'
 # # 1m,
 if interval =="1m":
@@ -67,7 +70,7 @@ st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2
 
 end=st.sidebar.number_input("Enter how many lags you want to use",value=1,min_value=1,max_value=10,step=1)
 sp=end
-future=st.sidebar.number_input("Enter how many steps you want to predict in future",value=1,min_value=1,max_value=3,step=1)
+future=st.sidebar.number_input("Enter how many steps you want to predict in future",value=1,min_value=1,max_value=2,step=1)
 
 st.code("""
 X=[]
@@ -91,7 +94,7 @@ for i in range(len(x)):
     end+=1
 
 col1,col2=st.columns(2)
-col1.write((X.pop(-1),Y.pop(-1)))
+
 col2.write((X[-5:],Y[-5:]))
 
 import numpy as np
@@ -102,60 +105,14 @@ X_arr=X_arr.reshape(X_arr.shape[:][0],sp,1)
 X_train,X_test,y_train,y_test=X_arr[:-100],X_arr[-100:],Y_arr[:-100],Y_arr[-100:]
 
 st.write(f'input data shape{X_train.shape}')
+st.write(f'output data shape{y_train.shape}')
 
 st.sidebar.image("pages/images.jpg")
-# ================================================================
-# Model Training
-col3,col4,col5=st.columns(3)
-col4.header('Model Training')
 
-from keras.models import Sequential
-from keras.layers import LSTM,Dense
+if st.button("""do you want to train the model""",help='click me to train the model'):
+    tt.model_training(future=future,sp=sp,X_train=X_train,y_train=y_train)
+    st.write('see the training ')
 
-#Architecture
-nn=Sequential(name='Sequence_LSTM')
-nn.add(LSTM(50,activation='relu',input_shape=(sp,1),name='input_layer_lstm'))
-nn.add(Dense(50,name='Hidden_layer_Dense1',activation='LeakyReLU'))
-nn.add(Dense(50,name='Hidden_layer_Dense2'))
-nn.add(Dense(future,name='Output_layer_Dense'))
-nn.compile(loss='mse',optimizer='adam')
-nn.summary(print_fn=lambda x: st.text(x))
-
-# print(nn.summary())
-# st.write(f'<p>{nn.summary()}</p>',unsafe_allow_html=True)
-nn.fit(X_train,y_train,epochs=100,batch_size=100)
-
-
-pred=nn.predict(X_test)
-
-# plt.plot(hist.Close)
-fig,ax=plt.subplots()
-ax.plot(pred,label='prediction',color='orange')
-ax.plot(y_test,label='Actual',color='red')
-# plt.xticks(hist.index[:-100])
-ax.legend()
-st.pyplot(fig)
-
-fp = eur.history(interval='1m',period='60m')
-fp.Close.values
-
-# X=[]
-# # end=3
-# x=fp.Close.values
-# for i in range(len(x)):
-#     end+=1
-#     if end>=len(x)-1:break
-#     X.append(x[i:end])
-# #     Y.append(x[end])
-
-# # import numpy as np
-# new_points=np.array(X).reshape(np.array(X).shape[0], 4,1)
-# new_points.shape
-
-# pred1=nn.predict(new_points)
-
-# fig1,ax1=plt.subplots()
-# ax1.plot(x,label='real')
-# ax1.plot(pred1)
-# ax1.legend()
-# st.pyplot(fig1)
+if st.button("""Click to Evaluate the model""",help='click me to eval the model'):
+    tt.Evaluation(X_test=X_test,y_test=y_test)
+    st.write('see the evalaution')
