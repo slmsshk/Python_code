@@ -27,7 +27,7 @@ def model_training(future,X_train,y_train,sp):
 
     nn.fit(X_train,y_train,epochs=100,batch_size=100)
     nn.save("Trained")
-    st.write('Go to predictions')
+    # st.write(' to predictions')
 # ========================================================
 # st.write()
 def Evaluation(X_test,y_test):
