@@ -8,7 +8,11 @@ import training as tt
 
 st.set_page_config(page_title="Eur/USD", page_icon="pages/eurusd.png",initial_sidebar_state = "expanded")
 
-st.title('EUR/USD!!!!')
+majors=['USDJPY','EURUSD','AUDUSD','EURUSD','GBPUSD','NZDUSD','USDCAD','USDCHF']
+
+pair=st.sidebar.selectbox(label='Select the pair you want to trade',options=majors)+"=X"
+
+st.title(pair[:-2]+"!!!")
 
 st.markdown(f"<p style='background-color:darkgreen;padding:5px;color:#f2f3f4;'>Fetching Data</p>",unsafe_allow_html=True)
 
@@ -19,9 +23,6 @@ st.markdown(f"<p style='background-color:darkgreen;padding:5px;color:#f2f3f4;'>F
 
 st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters to fetch Data</p>",unsafe_allow_html=True)
 
-majors=['USDJPY','EURUSD','AUDUSD','EURUSD','GBPUSD','NZDUSD','USDCAD','USDCHF']
-
-pair=st.sidebar.selectbox(label='Select the pair you want to trade',options=majors)+"=X"
 
 interval=st.sidebar.selectbox(label='Select Interval',options=('1m', '2m', '5m', '15m', '30m', '60m', '1d', '5d', '1wk', '1mo', '3mo'))
 
