@@ -19,6 +19,9 @@ st.markdown(f"<p style='background-color:darkgreen;padding:5px;color:#f2f3f4;'>F
 
 st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters to fetch Data</p>",unsafe_allow_html=True)
 
+majors=['USDJPY','EURUSD','AUDUSD','EURUSD','GBPUSD','NZDUSD','USDCAD','USDCHF']
+
+pair=st.sidebar.selectbox(label='Select the pair you want to trade',options=majors)+"=X"
 
 interval=st.sidebar.selectbox(label='Select Interval',options=('1m', '2m', '5m', '15m', '30m', '60m', '1d', '5d', '1wk', '1mo', '3mo'))
 
@@ -36,8 +39,7 @@ elif interval in ['60m']:
 else:
     period=st.sidebar.selectbox(label='Select Period',options=['1d','5d','1wk','1mo','2mo','3mo','6mo','1y','3y','5y','10y','ytd','max'])
 
-majors=['USDJPY','EURUSD','AUDUSD','EURUSD','GBPUSD','NZDUSD','USDCAD','USDCHF']
-pair=st.sidebar.selectbox(label='Select the pair you want to trade',options=majors)+"=X"
+
 eur=yf.Ticker(pair)
 hist = eur.history(interval=interval,period=period)
 eur.history()
