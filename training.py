@@ -30,14 +30,14 @@ def model_training(future,X_train,y_train,sp):
     st.write('Go to predictions')
 # ========================================================
 # st.write()
-def Evaluation(X_test,y_test):
+def Evaluation(X_test,y_test,future):
     col3,col4,col5=st.columns(3)
     col4.header('Model Evaluation')
     nn=keras.models.load_model('Trained')
     pred=nn.predict(X_test)
     fig,ax=plt.subplots()
-    ax.plot(pred[:,1],label='prediction',color='orange')
-    ax.plot(y_test,label='Actual',color='red')
+    ax.plot(pred[:,future-1],label='prediction',color='orange')
+    ax.plot(y_test[:future-1],label='Actual',color='red')
     # plt.xticks(hist.index[:-100])
     ax.legend()
     st.pyplot(fig)
