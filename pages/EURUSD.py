@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import training as tt
 
-st.set_page_config(page_title="Eur/USD", page_icon='pages/eurusd.png',initial_sidebar_state = "expanded")
+st.set_page_config(page_title="Eur/USD", page_icon="pages/eurusd.png",initial_sidebar_state = "expanded")
 
 st.title('EUR/USD!!!!')
 
@@ -42,7 +42,7 @@ eur=yf.Ticker("EURUSD=X")
 hist = eur.history(interval={interval},period={period})
 """)
 
-eur=yf.Ticker("EURUSD=X")
+eur=yf.Ticker("USDJPY=X")
 hist = eur.history(interval=interval,period=period)
 eur.history()
 
