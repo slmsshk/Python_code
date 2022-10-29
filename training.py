@@ -46,15 +46,13 @@ def pred(interval,period,sp,pair):
     nn=keras.models.load_model('Trained')
     x=yf.Ticker(pair)
     pp=x.history(interval=interval,period=period).Close[-sp:].values.reshape(1,sp,1)
-    y=x.history(interval=interval,period=period).Close[-sp:].values
-    st.write(type(pp),pp[0])
+    # y=x.history(interval=interval,period=period).Close[-sp:].values
+    # st.write(type(pp),pp[0])
     predict=nn.predict(pp)
     fig,ax=plt.subplots()
-    ax.plot(np.append(y,values=predict))
+    ax.plot(np.append(pp,values=predict))
     ax.set_xticks([i+1 for i in range(sp)])
-    # ax.legend()
     st.write(predict)
-    # ax.plot(predict,color='green')
     st.pyplot(fig)
 
     
