@@ -22,7 +22,7 @@ def model_training(future,X_train,y_train,sp):
     nn.compile(loss='mse',optimizer='adam')
     nn.summary(print_fn=lambda x: st.text(x))
 
-    print(nn.summary())
+    # print(nn.summary())
     st.write(f'<p>{nn.summary()}</p>',unsafe_allow_html=True)
 
     nn.fit(X_train,y_train,epochs=100,batch_size=100)
