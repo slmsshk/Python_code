@@ -37,7 +37,7 @@ def Evaluation(X_test,y_test,future):
     pred=nn.predict(X_test)
     fig,ax=plt.subplots()
     ax.plot(pred[:,future-1],label='prediction',color='orange')
-    ax.plot(y_test[:future-1],label='Actual',color='red')
+    ax.plot(y_test[:,future-1],label='Actual',color='red')
     # plt.xticks(hist.index[:-100])
     ax.legend()
     st.pyplot(fig)
