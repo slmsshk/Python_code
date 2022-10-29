@@ -21,14 +21,11 @@ def model_training(future,X_train,y_train,sp):
     nn.add(Dense(future,name='Output_layer_Dense'))
     nn.compile(loss='mse',optimizer='adam')
     nn.summary(print_fn=lambda x: st.text(x))
-
-    # print(nn.summary())
-    st.write(f'<p>{nn.summary()}</p>',unsafe_allow_html=True)
+    # st.write(f'<p>{nn.summary()}</p>',unsafe_allow_html=True)
 
     nn.fit(X_train,y_train,epochs=100,batch_size=100)
     nn.save("Trained")
-    # st.progress()
-    # st.write(' to predictions')
+
 # ========================================================
 # st.write()
 def Evaluation(X_test,y_test):
