@@ -6,6 +6,7 @@ from keras.layers import LSTM,Dense
 import matplotlib.pyplot as plt
 import streamlit as st
 import keras
+import numpy as np
 
 def model_training(future,X_train,y_train,sp):
 
@@ -28,17 +29,33 @@ def model_training(future,X_train,y_train,sp):
 
 # ========================================================
 # st.write()
-def Evaluation(X_test,y_test):
-    col3,col4,col5=st.columns(3)
-    col4.header('Model Evaluation')
-    nn=keras.models.load_model('Trained')
-    pred=nn.predict(X_test)
-    fig,ax=plt.subplots()
-    ax.plot(pred[:,-1],label='prediction',color='orange')
-    ax.plot(y_test[:,-1],label='Actual',color='red')
-    # plt.xticks(hist.index[:-100])
+def Evaluation(X_test, y_test):
+    col3, col4, col5 = st.columns(3)
+    with col4:
+        st.header('Model Evaluation')
+
+    # Load the pre-trained model
+    nn = keras.models.load_model('Trained')
+
+    # Make predictions
+    pred = nn.predict(X_test)
+
+    # Plot predictions vs actual
+    fig, ax = plt.subplots()
+    ax.plot(pred[:,-1], label='Prediction', color='orange')
+    ax.plot(y_test[:,-1], label='Actual', color='red')
     ax.legend()
     st.pyplot(fig)
+
+    # Calculate MAPE
+    mape = np.mean(np.abs((y_test[:,-1] - pred[:,-1]) / y_test[:,-1])) * 100
+
+    # Display MAPE
+    with col4:
+        st.metric(label="Mean Absolute Percentage Error (MAPE)", value=f"{mape:.2f}%")
+
+# Assuming you have defined X_test and y_test somewhere in your script, call the Evaluation function:
+# Evaluation(X_test, y_test)
 
 def pred(interval,period,sp,pair):
     import yfinance as yf
