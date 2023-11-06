@@ -1,2 +1,7 @@
-
+Trained/
 env/
+Trained/keras_metadata.pb
+Trained/saved_model.pb
+Trained/variables/variables.data-00000-of-00001
+Trained/variables/variables.index
+Trained/variables/variables.index
