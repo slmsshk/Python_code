@@ -10,3 +10,6 @@ matplotlib==3.6.1
 pandas_ta 
 pmdarima
 prophet
+lightgbm
+xgboost
+

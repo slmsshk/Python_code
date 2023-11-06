@@ -7,6 +7,9 @@ import pandas as pd
 from prophet import Prophet
 
 st.title('Forex Dashboard')
+# ======================================================== #
+# Data prep
+# ======================================================== #
 
 majors = [
     'USDJPY=X', 'EURUSD=X', 'AUDUSD=X',
@@ -26,11 +29,12 @@ period_options = {
     '1mo': ['3mo', '6mo', '1y', '3y', '5y', '10y', 'max'],
     '3mo': ['1y', '3y', '5y', '10y', 'max'],
 }
+st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters to fetch Data & Train models</p>",unsafe_allow_html=True)
 
 # We can loop over each currency pair, interval, and period to create and display the charts
-majors=['USDJPY','EURUSD','AUDUSD','EURUSD','GBPUSD','NZDUSD','USDCAD','USDCHF']
+majors=['USDJPY','EURUSD','AUDUSD','GBPUSD','NZDUSD','USDCAD','USDCHF']
+pair=st.sidebar.selectbox(label='Select the pair you want to trade',options=majors)
 
-st.sidebar.write(f"<p style='font-size:15px;background-color:	#5d8aa8;color:	#f2f3f4;'>Parameters to fetch Data</p>",unsafe_allow_html=True)
 
 interval=st.sidebar.selectbox(label='Select Interval',options=('1m', '2m', '5m', '15m', '30m', '60m', '1d', '5d', '1wk', '1mo', '3mo'))
 
@@ -49,7 +53,6 @@ else:
     period=st.sidebar.selectbox(label='Select Period',options=['1d','5d','1wk','1mo','2mo','3mo','6mo','1y','3y','5y','10y','ytd','max'])
 ma_window = st.sidebar.number_input('Enter the MA term', min_value=1, max_value=15, value=5, step=1)
 
-pair=st.sidebar.selectbox(label='Select the pair you want to trade',options=majors)
 # eur=yf.Ticker(pair_X)
 
 pair_X = pair + "=X"
@@ -63,8 +66,10 @@ hist = ticker.history(interval=interval,period=period)
 # Fetch historical data
 ticker = yf.Ticker(pair_X)
 hist = ticker.history(interval=interval, period=period)
-
+# ========================================================= #
 # Calculate indicators
+# ========================================================= #
+
 # Moving Average
 hist['MA'] = hist['Close'].rolling(window=ma_window).mean()
 
@@ -77,7 +82,7 @@ hist['RSI'] = ta.rsi(hist['Close'])
 
 # Bollinger Bands
 bollinger = ta.bbands(hist['Close'])
-st.write(bollinger.columns,bollinger)
+# st.write(bollinger.columns,bollinger)
 hist['Bollinger_Lower'] = bollinger['BBL_5_2.0']
 hist['Bollinger_Middle'] = bollinger['BBM_5_2.0']  # Middle Band might not be used, but included for reference
 hist['Bollinger_Upper'] = bollinger['BBU_5_2.0']
@@ -130,7 +135,7 @@ fig.add_trace(go.Scatter(
     line=dict(color='blue', width=2),
     name='MA'
 ))
-hist
+
 # Interpret indicators for the trend
 trend_analysis = {}
 
@@ -163,8 +168,8 @@ trend_analysis['Bollinger Trend'] = 'Bullish' if hist['Close'].iloc[-1] < hist['
 #     trend_analysis['ichimoku_trend'] = 'Neutral'
 
 # Add trend analysis to chart
-for indicator, trend in trend_analysis.items():
-    fig.add_annotation(x=hist.index[-1], y=hist['MA'].iloc[-1], text=f"{indicator}: {trend}", showarrow=False)
+# for indicator, trend in trend_analysis.items():
+#     fig.add_annotation(x=hist.index[-1], y=hist['MA'].iloc[-1], text=f"{indicator}: {trend}", showarrow=False)
 
 # Update layout
 fig.update_layout(
@@ -179,10 +184,17 @@ fig.update_layout(
 st.plotly_chart(fig, use_container_width=True)
 # hist['Datetime'] = pd.to_datetime(hist.index)
 
+# ============================================= #
+# Models
+# ============================================= #
+models = pd.DataFrame(index=['Trend'])
+
 # hist.set_index('Datetime', inplace=True)
 close_prices = hist['Close']
 
-# The auto_arima function will try to identify the most optimal parameters for the ARIMA model
+# --------
+# ARIMA
+# --------
 # and return a fitted model.
 import pmdarima as pm
 
@@ -248,8 +260,11 @@ if but:
 
     # Show plot in Streamlit
     st.plotly_chart(fig, use_container_width=True)
+models['Arima'] = ['Bullish' if close_prices.iloc[-1]<=fc.iloc[0] else 'Bearish']
 
+# --------
 # Prophet
+# --------
 
 df = pd.DataFrame({
     'ds': pd.to_datetime(hist.index),
@@ -276,22 +291,211 @@ if pro:
     st.write('Forecast plot')
     st.pyplot(fig1)
 
-    # # Plot the forecast components
-    # fig2 = m.plot_components(forecast)
-    # st.write('Forecast components')
-    # st.pyplot(fig2)
+    # Plot the forecast components
+    fig2 = m.plot_components(forecast)
+    st.write('Forecast components')
+    st.pyplot(fig2)
+
+models['Prophet'] = ['Bullish' if forecast['yhat'][0] >=close_prices.iloc[-1] else 'Bearish']
+
+# --------------
+# Random Forest
+# --------------
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+t = hist.copy()
+t['Lagged_Close'] = hist['Close'].shift(1)
+
+t.dropna(inplace=True)
+X = t[['Lagged_Close']]  # Features are the lagged closing prices
+y = t['Close']           # Target is the current closing price
+
+# Split the data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=False)
+
+# Initialize and train the Random Forest model
+rf = RandomForestRegressor(n_estimators=100, random_state=42)
+rf.fit(X_train, y_train)
+
+# Make predictions
+y_pred = rf.predict(X_test)
+
+# Evaluate the model
+mape = np.round(np.mean(np.abs((y_test - y_pred) / y_test)) * 100,3)
+print('MAPE:', mape)
+models['RF'] = [f"Bullish_{mape} %" if y_pred[-1] >=y_test.iloc[-1] else f'Bearish_{mape}%']
+
+# --------------
+# XGBM
+# --------------
+from xgboost import XGBRFRegressor
+
+xgb = XGBRFRegressor()
+xgb.fit(X_train,y_train)
+
+# Make predictions
+y_pred = xgb.predict(X_test)
+
+# Evaluate the model
+mape = np.round(np.mean(np.abs((y_test - y_pred) / y_test)) * 100,3)
+print('XGBM MAPE:', mape)
+
+models['XGBM'] = [f"Bullish_{mape} " if y_pred[-1] >=y_test.iloc[-1] else f'Bearish_{mape}%']
+
+# --------------
+# lIGHTGBM
+# --------------
+from lightgbm import LGBMRegressor
+
+lgbm = LGBMRegressor()
+lgbm.fit(X_train,y_train)
+
+# Make predictions
+y_pred = lgbm.predict(X_test)
+
+# Evaluate the model
+mape = np.round(np.mean(np.abs((y_test - y_pred) / y_test)) * 100,3)
+print('LGBM MAPE:', mape)
+
+models['LGBM'] = [f"Bullish_{mape} " if y_pred[-1] >=y_test.iloc[-1] else f'Bearish_{mape}%']
+
+# --------------
+# lIGHTGBM
+# --------------
+from sklearn.svm import SVR
+
+svr = SVR()
+svr.fit(X_train,y_train)
+
+# Make predictions
+y_pred = svr.predict(X_test)
+
+# Evaluate the model
+mape = np.round(np.mean(np.abs((y_test - y_pred) / y_test)) * 100,3)
+print('SVR MAPE:', mape)
+
+models['SVR'] = [f"Bullish_{mape} " if y_pred[-1] >=y_test.iloc[-1] else f'Bearish_{mape}%']
+
+# --------------
+# Deep Learning:
+# --------------
+from keras.models import Sequential
+from keras.layers import LSTM,Dense,SimpleRNN,Conv1D, MaxPooling1D, Flatten
+import matplotlib.pyplot as plt
+import streamlit as st
+import keras
+
+X=[]
+Y=[]
+x=hist.Close.dropna().values
+
+end = st.sidebar.number_input('No of lags for DL',min_value=1,max_value=10,step=1)
+sp=end
+
+for i in range(len(x)):
+    if end>=len(x)-1:break
+    X.append(x[i:end])
+    Y.append(x[end:end+1])
+    end+=1
+
+col1=st.button('Data')
+
+if col1:
+    st.write((X[-5:],Y[-5:]))
+
+# Loss function
+import tensorflow.keras.backend as K
+
+def custom_mape(y_true, y_pred):
+    """
+    Custom MAPE loss function that avoids division by zero.
+    """
+    epsilon = 0.1  # Smoothing factor, to avoid division by zero
+    true = K.maximum(y_true, epsilon)
+    pred = K.maximum(y_pred, epsilon)
+    return K.mean(K.abs((true - pred) / true), axis=-1)
+
+X_arr,Y_arr=np.array(X),np.array(Y)
+X_arr=X_arr.reshape(X_arr.shape[:][0],sp,1)
+
+X_train,X_test,y_train,y_test=X_arr[:-100],X_arr[-100:],Y_arr[:-100],Y_arr[-100:]
+
+dl = pd.DataFrame(index=['Trend'])
+epoch = st.sidebar.number_input('Training Cycle: ',min_value=1,max_value=10000,step=1)
+
+# ---------------------------------
+# Recurrent Neural Networks (RNN):
+# ---------------------------------
+
+model_rnn = Sequential()
+model_rnn.add(SimpleRNN(units=50, return_sequences=True, input_shape=(X_train.shape[1], X_train.shape[2])))
+model_rnn.add(SimpleRNN(units=50))
+model_rnn.add(Dense(1))
+
+model_rnn.compile(optimizer='adam', loss=custom_mape)
+model_rnn.fit(X_train, y_train, epochs=epoch, batch_size=32, validation_data=(X_test, y_test), verbose=1)
+y_pred = model_rnn.predict(X_test)
+mape = np.round(np.mean(np.abs((y_test - y_pred) / y_test)) * 100,3)
+print('RNN MAPE:', mape)
+
+dl['RNN'] = [f"Bullish_{mape} " if y_pred[-1] >=y_test[-1] else f'Bearish_{mape}%']
 
 
+# ---------------------------------------
+# Long Short-Term Memory Networks (LSTM):
+# ---------------------------------------
 
+model_lstm = Sequential()
+model_lstm.add(LSTM(units=50, return_sequences=True, input_shape=(X_train.shape[1], X_train.shape[2])))
+model_lstm.add(LSTM(units=50))
+model_lstm.add(Dense(1))
+
+
+model_lstm.compile(optimizer='adam', loss=custom_mape)
+model_lstm.fit(X_train, y_train, epochs=epoch, batch_size=32, validation_data=(X_test, y_test), verbose=1)
+y_pred = model_lstm.predict(X_test)
+mape = np.round(np.mean(np.abs((y_test - y_pred) / y_test)) * 100,3)
+print('LSTM MAPE:', mape)
+
+dl['LSTM'] = [f"Bullish_{mape} " if y_pred[-1] >=y_test[-1] else f'Bearish_{mape}%']
+
+# st.write(X_train.shape )
+# ------------------------------------
+# Convolutional Neural Networks (CNN):
+# ------------------------------------
+
+# model_cnn = Sequential()
+# model_cnn.add(Conv1D(filters=64, kernel_size=2, activation='relu', input_shape=(X_train.shape[1], X_train.shape[2])))
+# model_cnn.add(MaxPooling1D(pool_size=2))
+# model_cnn.add(Flatten())
+# model_cnn.add(Dense(50, activation='relu'))
+# model_cnn.add(Dense(1))
+
+# model_cnn.compile(optimizer='adam', loss=custom_mape)
+# model_cnn.fit(X_train, y_train, epochs=100, batch_size=32, validation_data=(X_test, y_test), verbose=1)
+
+# mape = np.round(np.mean(np.abs((y_test - y_pred) / y_test)) * 100,3)
+# print('CNN MAPE:', mape)
+
+# dl['CNN'] = [f"Bullish_{mape} " if y_pred[-1] >=y_test[-1] else f'Bearish_{mape}%']
+
+# =====================
+# Summary
+# =====================
 # st.write(hist.head())
 # Display trend analysis results
-st.write(pd.DataFrame(trend_analysis,index=['Trend']))
 
+st.write('Technical Indicators')
+ta=pd.DataFrame(trend_analysis,index=['Trend'])
+st.write(ta)
 
-models = pd.DataFrame()
-
-models['Arima'] = ['Greator' if close_prices.iloc[-1]>=fc.iloc[0] else 'less']
-models['Prophet'] = ['Greator' if forecast['yhat'][0] >=fc.iloc[0] else 'less']
-
+st.write('Statistical Models')
 st.write(models)
 
+st.write('Deep learning')
+st.write(dl)
+
+st.write(pd.concat([ta.T,models.T,dl.T],axis=0).fillna('-'))
